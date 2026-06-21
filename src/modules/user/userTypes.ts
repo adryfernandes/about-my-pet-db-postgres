@@ -1,4 +1,4 @@
-import { Sex } from "../../../generated/prisma/enums"
+import { Sex } from "../../generated/prisma/enums"
 
 export interface CreateUserDTO {
   name: string

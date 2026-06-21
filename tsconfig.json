@@ -5,6 +5,11 @@
     "target": "ES2022",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "strict": true
-  }
+    "strict": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "generated"]
 }
