@@ -15,8 +15,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/index.ts",
+     "build": "tsc",
+    "prepare": "npm run build && prisma generate"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
