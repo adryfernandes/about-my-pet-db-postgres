@@ -1,3 +1,3 @@
-export { PrismaClient } from "./generated/prisma/client";
-export { Sex } from "./generated/prisma/enums";
+export * from "./generated/prisma/enums";
+export * from "./generated/prisma/models";
 export * from "./modules";
