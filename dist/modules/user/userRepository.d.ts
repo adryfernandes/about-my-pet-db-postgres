@@ -6,7 +6,7 @@ export declare class UserRepository {
         document: string;
         phone: string;
         email: string;
-        sex: import("../../generated/prisma/enums").Sex;
+        sex: import("../..").Sex;
         createdAt: Date;
         updatedAt: Date;
     }>;
@@ -16,7 +16,7 @@ export declare class UserRepository {
         document: string;
         phone: string;
         email: string;
-        sex: import("../../generated/prisma/enums").Sex;
+        sex: import("../..").Sex;
         createdAt: Date;
         updatedAt: Date;
     } | null>;
@@ -26,7 +26,7 @@ export declare class UserRepository {
         document: string;
         phone: string;
         email: string;
-        sex: import("../../generated/prisma/enums").Sex;
+        sex: import("../..").Sex;
         createdAt: Date;
         updatedAt: Date;
     } | null>;
