@@ -1,0 +1,19 @@
+model User {
+  id       String @id @default(uuid()) @db.Uuid
+  name     String
+  document String @unique
+  phone    String
+  email    String @unique
+  sex      Sex
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+enum Sex {
+  MALE
+  FEMALE
+  OTHER
+}

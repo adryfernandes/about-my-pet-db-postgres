@@ -15,16 +15,23 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/server.ts"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@types/node": "^26.0.0",
     "dotenv": "^17.4.2",
-    "prisma": "^7.8.0"
+    "prisma": "^7.8.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.4"
   }
 }
